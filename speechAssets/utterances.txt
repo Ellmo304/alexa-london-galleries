@@ -1,0 +1,20 @@
+WhatsOnIntent tell me whats on at {gallery}
+WhatsOnIntent tell me whats on at the {gallery}
+WhatsOnIntent whats on at {gallery}
+WhatsOnIntent whats on at the {gallery}
+WhatsOnIntent what exhibitions are on at {gallery}
+WhatsOnIntent what exhibitions are on at the {gallery}
+WhatsOnIntent what shows are on at {gallery}
+WhatsOnIntent what shows are on at the {gallery}
+WhatsOnIntent {gallery}
+WhatsOnIntent whats on at the moment at {gallery}
+WhatsOnIntent whats on at the moment at the {gallery}
+WhatsOnIntent whats currently on at {gallery}
+WhatsOnIntent whats currently on at the {gallery}
+WhatsOnIntent whats currently on show at {gallery}
+WhatsOnIntent whats currently on show at the {gallery}
+
+AMAZON.StopIntent stop
+AMAZON.StopIntent off
+AMAZON.StopIntent goodbye
+AMAZON.StopIntent shut up

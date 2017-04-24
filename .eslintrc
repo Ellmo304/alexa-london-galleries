@@ -1,0 +1,30 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "block-scoped-var": 0,
+    "brace-style": [1, "stroustrup", { "allowSingleLine": true }],
+    "comma-dangle": ["error", {
+      "arrays": "never",
+      "objects": "always",
+      "imports": "never",
+      "exports": "never",
+      "functions": "ignore"
+    }],
+    "consistent-return": 0,
+    "func-names": 0,
+    "guard-for-in": 0,
+    "max-len": 0,
+    "newline-per-chained-call": 0,
+    "no-console": 0,
+    "import/no-dynamic-require": 0,
+    "no-else-return": 0,
+    "no-plusplus": 0,
+    "no-restricted-syntax": 0,
+    "no-var": 0,
+    "object-shorthand": 0,
+    "padded-blocks": 0,
+    "quote-props": 0,
+    "strict": 0,
+    "vars-on-top": 0
+  }
+}
