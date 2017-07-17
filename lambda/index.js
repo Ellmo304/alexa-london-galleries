@@ -3,6 +3,7 @@ const Alexa = require('alexa-sdk');
 const OpearloAnalytics = require('opearlo-analytics');
 
 const APP_ID = 'amzn1.ask.skill.6d2e6597-af59-4345-a295-dcd5c9388d04';
+
 const opearloApiKey = 'RrTGUvJLyz3w5yR8zaC5p5V7Q83VCnfv6M8fnrCE';
 const opearloUserId = 'kJnUOYznWOZmmLEv4aUesaMrOg63';
 const voiceAppName = 'london-galleries';
@@ -21,8 +22,13 @@ const handlers = {
     if (this.event.request.intent.slots.gallery.value) {
       const gallery = this.event.request.intent.slots.gallery.value;
       const voiceContentID = gallery.replace(/\s+/g, '-').toLowerCase();
-      OpearloAnalytics.getVoiceContent(opearloUserId, voiceAppName, opearloApiKey, voiceContentID, (result) => {
-        this.emit(':ask', `${result} ${prompt}`, reprompt);
+      OpearloAnalytics.getVoiceContent(opearloUserId, voiceAppName, opearloApiKey, voiceContentID, (error, result) => {
+        if (error) {
+          this.emit(':ask', `Sorry, I couldn't find that Gallery. ${prompt}`, reprompt);
+        }
+        else {
+          this.emit(':ask', `${result} ${prompt}`, reprompt);
+        }
       });
     }
     else {

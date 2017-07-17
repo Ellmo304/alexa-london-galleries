@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "alexa-sdk": "^1.0.9",
-    "opearlo-analytics": "^0.2.0"
+    "opearlo-analytics": "^0.2.4"
   },
   "devDependencies": {},
   "scripts": {
